@@ -61,7 +61,7 @@ export function spawnEmojiInFrontOfUser({ model, particleEmitterConfig }) {
 
 AFRAME.registerComponent("emoji", {
   schema: {
-    emitDecayTime: { default: 20 },
+    emitDecayTime: { default: 100 },
     emitFadeTime: { default: 0.5 },
     emitEndTime: { default: 0 },
     particleEmitterConfig: {
