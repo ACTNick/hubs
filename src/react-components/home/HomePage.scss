@@ -33,6 +33,30 @@
   }
 }
 
+:local(.sign-in-container) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  @media(min-width: theme.$breakpoint-lg) {
+    display: none;
+  }
+}
+
+:local(.mobile-sign-out) {
+  padding: 0.5rem;
+}
+
+:local(.hero) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (min-width: theme.$breakpoint-lg) {
+    flex-direction: row;
+  }
+}
 
 
 
