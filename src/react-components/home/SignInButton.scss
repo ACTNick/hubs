@@ -3,7 +3,7 @@
 :local(.sign-in-button) {
     display: none;
     @media(min-width: theme.$breakpoint-lg) {
-        display: flex;
+        display: none;
       }
 }
 
