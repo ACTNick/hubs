@@ -9,7 +9,7 @@
 }
 
 :local(.mobile-sign-in) {
-    display: flex;
+    display: none;
     @media(min-width: theme.$breakpoint-lg) {
         display: none;
         visibility:hidden;
