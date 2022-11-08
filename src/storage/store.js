@@ -156,7 +156,7 @@ export const SCHEMA = {
         audioPanningQuality: { type: "string", default: defaultAudioPanningQuality() },
         theme: { type: "string", default: getDefaultTheme()?.name },
         cursorSize: { type: "number", default: 1 },
-        nametagVisibility: { type: "string", default: "showAll" },
+        nametagVisibility: { type: "string", default: "showNone" },
         nametagVisibilityDistance: { type: "number", default: 5 },
         avatarVoiceLevels: { type: "object" }
       }
