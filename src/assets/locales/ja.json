@@ -333,7 +333,7 @@
   "object-menu.pin-object-button": "Pin",
   "object-menu.title": "Object",
   "object-menu.unpin-object-button": "Unpin",
-  "object-menu.view-object-button": "View",
+  "object-menu.view-object-button": "戻る",
   "object-url-modal.create-object-button": "Create Object",
   "object-url-modal.message": "Upload or paste a URL to an image, video, model, or scene. Models can be found on <sketchfablink>Sketchfab</sketchfablink>.",
   "object-url-modal.message-with-collection": "Upload or paste a URL to an image, video, model, or scene. Models can be found on <sketchfablink>Sketchfab</sketchfablink> or our <collectionlink>collection</collectionlink>.",
