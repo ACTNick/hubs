@@ -31,11 +31,11 @@ export const emojis = [
     particleEmitterConfig: {
       src: new URL(particle, window.location).href,
       resolve: false,
-      particleCount: 100,
+      particleCount: 20,
       startSize: 0.01,
       endSize: 0.2,
       sizeRandomness: 0.05,
-      lifetime: 10,
+      lifetime: 1,
       lifetimeRandomness: 0.2,
       ageRandomness: 1,
       startVelocity: { x: 0, y: 1, z: 0 },
@@ -61,7 +61,7 @@ export function spawnEmojiInFrontOfUser({ model, particleEmitterConfig }) {
 
 AFRAME.registerComponent("emoji", {
   schema: {
-    emitDecayTime: { default: 100 },
+    emitDecayTime: { default: 1.5 },
     emitFadeTime: { default: 0.5 },
     emitEndTime: { default: 0 },
     particleEmitterConfig: {
