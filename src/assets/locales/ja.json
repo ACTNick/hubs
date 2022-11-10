@@ -329,7 +329,7 @@
   "object-menu.delete-object-button": "Delete",
   "object-menu.edit-avatar-button": "Edit Avatar",
   "object-menu.hide-avatar-button": "Hide",
-  "object-menu.object-link-button": "Link",
+  "object-menu.object-link-button": "保存",
   "object-menu.pin-object-button": "Pin",
   "object-menu.title": "Object",
   "object-menu.unpin-object-button": "Unpin",
