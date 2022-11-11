@@ -29,7 +29,7 @@ export function HomePage() {
   const { results: publicRooms } = usePublicRooms();
 
   const sortedFavoriteRooms = Array.from(favoriteRooms).sort((a, b) => b.member_count - a.member_count);
-  const sortedPublicRooms = Array.from(publicRooms).sort((a, b) => a.name < b.name ? -1 : 1);
+  const sortedPublicRooms = Array.from(publicRooms).sort((a, b) => b.member_count - a.member_count);
   const wrapInBold = chunk => <b>{chunk}</b>;
   useEffect(() => {
     const qs = new URLSearchParams(location.search);
