@@ -138,49 +138,11 @@ export function HomePage() {
       {sortedPublicRooms.length > 0 && (
         <Container className={styles.roomsContainer}>
           <h3 className={styles.roomsHeading}>
-            <span style="font-style: italic; letter-spacing: .1em; color: #f00; text-shadow: -3px 2px 0 #fff;">LIVE!!  </span>会場で公開中のルーム
-          </h3>
-          <Column grow padding className={styles.rooms}>
-            <MediaGrid center>
-              {sortedPublicRooms.map(room => {
-                if(room.scene_id === "LVAjH7e") {
-                    return (
-                        <MediaTile
-                          key={room.id}
-                          entry={room}
-                          processThumbnailUrl={(entry, width, height) =>
-                            scaledThumbnailUrlFor(entry.images.preview.url, width, height)
-                          }
-                        />
-                      );
-                }
-                else {
-                    return;
-                }
-              })}
-            </MediaGrid>
-          </Column>
-        </Container>
-      )}
-      {sortedPublicRooms.length > 0 && (
-        <Container className={styles.roomsContainer}>
-          <h3 className={styles.roomsHeading}>
             <FormattedMessage id="home-page.public--rooms" defaultMessage="Public Rooms" />
           </h3>
-          <div style="margin-left: 60px;  font-size: 18px;">
-            <div>
-                空いているルームを選択して入室してください。
-            </div>
-            <div>
-                （会場で公開しているルームと一部機能が異なります。）
-            </div>
-          </div>
           <Column grow padding className={styles.rooms}>
             <MediaGrid center>
               {sortedPublicRooms.map(room => {
-                if(room.scene_id === "LVAjH7e") {
-                    return;
-                }
                 return (
                   <MediaTile
                     key={room.id}
