@@ -30,7 +30,7 @@ AFRAME.registerComponent("open-media-button", {
           } else if ((hubId = await isHubsRoomUrl(src))) {
             const url = new URL(src);
             if (url.hash && window.APP.hub.hub_id === hubId) {
-              label = "次へ進む";
+              label = "";
             } else {
               label = "visit room";
             }
