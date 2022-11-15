@@ -143,7 +143,7 @@ export function HomePage() {
           <Column grow padding className={styles.rooms}>
             <MediaGrid center>
               {sortedPublicRooms.map(room => {
-                if(room.scene_id === "LVAjH7e") {
+                if(room.scene_id == "qUEtqnc") {
                     return (
                         <MediaTile
                           key={room.id}
@@ -170,7 +170,7 @@ export function HomePage() {
           <Column grow padding className={styles.rooms}>
             <MediaGrid center>
               {sortedPublicRooms.map(room => {
-                if(room.scene_id === "LVAjH7e") {
+                if(room.scene_id == "qUEtqnc") {
                     return;
                 }
                 else {
