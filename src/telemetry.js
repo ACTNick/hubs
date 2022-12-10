@@ -14,7 +14,9 @@ export default function registerTelemetry(trackedPage, trackedTitle) {
 
   if (ga && gaTrackingId) {
     console.log("Tracking: Google Analytics ID: " + gaTrackingId);
-
+    gtag('config', gaTrackingId);
+    
+    /*
     ga("create", gaTrackingId, "auto");
 
     if (trackedPage) {
@@ -26,5 +28,6 @@ export default function registerTelemetry(trackedPage, trackedTitle) {
     }
 
     ga("send", "pageview");
+    */
   }
 }
