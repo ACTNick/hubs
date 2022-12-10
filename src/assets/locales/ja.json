@@ -213,6 +213,7 @@
   "invite-popover.room-link": "ルーム Link",
   "invite-popover.title": "招待",
   "leave-room-modal.create-room.confirm": "Leave and Create Room",
+<<<<<<< HEAD
   "leave-room-modal.create-room.message": "Creating a new room will leave this one. Are you sure?",
   "leave-room-modal.join-room.confirm": "部屋に入る",
   "leave-room-modal.join-room.message": "Joining a new room will leave this one. Are you sure?",
@@ -231,6 +232,16 @@
   "loading-screen.entering-room": "Entering room...",
   "loading-screen.heading.tip": "Tip:",
   "loading-screen.heading.whats-new": "What's New?",
+=======
+  "leave-room-modal.create-room.message": "新しい部屋を作成し、この部屋が残ります。よろしいですか？",
+  "leave-room-modal.join-room.confirm": "Join Room",
+  "leave-room-modal.join-room.message": "新しい部屋に参加すると,この部屋から退室します。よろしいですか？",
+  "link-page.create-room-button": "新しい部屋を作成します",
+  "link-page.enter-code": "コードを入力してください:",
+  "link-page.toggle-mode-button": "レターコードをお持ちですか？",
+  "link-page.try-again": "そのコードが見つかりませんでした。{linebreak}もう一度やり直してください。",
+  "loading-screen.default": "ロードが完了しない場合:ああああああああ\\nああああああああああああああ",
+>>>>>>> activerse_master
   "loading-screen.loading-objects": "Loading objects {loadedCount}/{objectCount}",
   "loading-screen.message.keyboard-controls": "Press the Q & E keys to turn left and right.",
   "loading-screen.message.whats-new": "You can now set the default locale in your preferences. <a>Read More</a>",
