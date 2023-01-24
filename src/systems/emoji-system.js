@@ -8,7 +8,9 @@ const actions = [
   paths.actions.spawnEmoji3,
   paths.actions.spawnEmoji4,
   paths.actions.spawnEmoji5,
-  paths.actions.spawnEmoji6
+  paths.actions.spawnEmoji6,
+  paths.actions.spawnEmoji7,
+  paths.actions.spawnEmoji8
 ];
 
 const EMOJI_RATE_LIMIT = 1000;

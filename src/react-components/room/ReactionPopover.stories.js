@@ -7,6 +7,8 @@ import emoji3Particle from "../../assets/images/emojis/emoji_3.png";
 import emoji4Particle from "../../assets/images/emojis/emoji_4.png";
 import emoji5Particle from "../../assets/images/emojis/emoji_5.png";
 import emoji6Particle from "../../assets/images/emojis/emoji_6.png";
+import emoji7Particle from "../../assets/images/emojis/emoji_7.png";
+import emoji8Particle from "../../assets/images/emojis/emoji_8.png";
 import { ReactionPopoverButton } from "./ReactionPopover";
 
 export default {
@@ -31,7 +33,9 @@ const items = [
   { id: "heart", label: "Heart", src: emoji3Particle },
   { id: "wave", label: "Wave", src: emoji4Particle },
   { id: "angry", label: "Angry", src: emoji5Particle },
-  { id: "cry", label: "Cry", src: emoji6Particle }
+  { id: "cry", label: "Cry", src: emoji6Particle },
+  { id: "emoji7", label: "Emoji7", src: emoji7Particle },
+  { id: "emoji8", label: "Emoji8", src: emoji8Particle }
 ];
 
 export const Base = args => (

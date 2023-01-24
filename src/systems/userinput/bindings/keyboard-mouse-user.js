@@ -152,6 +152,11 @@ export const keyboardMouseUserBindings = addSetsToBindings({
       xform: xforms.rising
     },
     {
+      src: { value: paths.device.keyboard.key("b") },
+      dest: { value: paths.actions.toggleRecord },
+      xform: xforms.rising
+    },
+    {
       src: { value: paths.device.keyboard.key("Tab") },
       dest: { value: paths.actions.toggleFreeze },
       xform: xforms.rising
@@ -503,6 +508,32 @@ export const keyboardMouseUserBindings = addSetsToBindings({
     {
       src: { value: "/var/notcontrol+7" },
       dest: { value: paths.actions.spawnEmoji6 },
+      xform: xforms.rising
+    },
+    {
+      src: {
+        bool: paths.device.keyboard.key("control"),
+        value: paths.device.keyboard.key("8")
+      },
+      dest: { value: "/var/notcontrol+8" },
+      xform: xforms.copyIfFalse
+    },
+    {
+      src: { value: "/var/notcontrol+8" },
+      dest: { value: paths.actions.spawnEmoji7 },
+      xform: xforms.rising
+    },
+    {
+      src: {
+        bool: paths.device.keyboard.key("control"),
+        value: paths.device.keyboard.key("9")
+      },
+      dest: { value: "/var/notcontrol+9" },
+      xform: xforms.copyIfFalse
+    },
+    {
+      src: { value: "/var/notcontrol+9" },
+      dest: { value: paths.actions.spawnEmoji8 },
       xform: xforms.rising
     },
     {

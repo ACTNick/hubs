@@ -12,7 +12,9 @@ const emojiLabels = defineMessages({
   heart: { id: "reaction-popover.emoji-label.heart", defaultMessage: "Heart" },
   wave: { id: "reaction-popover.emoji-label.wave", defaultMessage: "Wave" },
   angry: { id: "reaction-popover.emoji-label.angry", defaultMessage: "Angry" },
-  cry: { id: "reaction-popover.emoji-label.cry", defaultMessage: "Cry" }
+  cry: { id: "reaction-popover.emoji-label.cry", defaultMessage: "Cry" },
+  emoji7: { id: "reaction-popover.emoji-label.emoji7", defaultMessage: "Emoji7" },
+  emoji8: { id: "reaction-popover.emoji-label.emoji8", defaultMessage: "Emoji8" }
 });
 
 function usePresence(scene, initialPresence) {
@@ -21,13 +23,10 @@ function usePresence(scene, initialPresence) {
   const onPresenceUpdate = ({ detail: presence }) => {
     if (presence.sessionId === NAF.clientId) setPresence(presence);
   };
-  useEffect(
-    () => {
-      scene.addEventListener("presence_updated", onPresenceUpdate);
-      return () => scene.removeEventListener("presence_updated", onPresenceUpdate);
-    },
-    [scene]
-  );
+  useEffect(() => {
+    scene.addEventListener("presence_updated", onPresenceUpdate);
+    return () => scene.removeEventListener("presence_updated", onPresenceUpdate);
+  }, [scene]);
 
   return presence;
 }
@@ -43,16 +42,13 @@ export function ReactionPopoverContainer({ scene, initialPresence }) {
     ...emoji
   }));
 
-  const onToggleHandRaised = useCallback(
-    () => {
-      if (presence.hand_raised) {
-        window.APP.hubChannel.lowerHand();
-      } else {
-        window.APP.hubChannel.raiseHand();
-      }
-    },
-    [presence]
-  );
+  const onToggleHandRaised = useCallback(() => {
+    if (presence.hand_raised) {
+      window.APP.hubChannel.lowerHand();
+    } else {
+      window.APP.hubChannel.raiseHand();
+    }
+  }, [presence]);
 
   return <ReactionPopoverButton items={items} presence={presence} onToggleHandRaised={onToggleHandRaised} />;
 }

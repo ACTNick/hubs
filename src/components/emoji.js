@@ -1,4 +1,3 @@
-/* global performance */
 import { addMedia } from "../utils/media-utils";
 import { SOUND_SPAWN_EMOJI } from "../systems/sound-effects-system";
 import emoji0Particle from "../assets/images/emojis/emoji_0.png";
@@ -8,6 +7,8 @@ import emoji3Particle from "../assets/images/emojis/emoji_3.png";
 import emoji4Particle from "../assets/images/emojis/emoji_4.png";
 import emoji5Particle from "../assets/images/emojis/emoji_5.png";
 import emoji6Particle from "../assets/images/emojis/emoji_6.png";
+import emoji7Particle from "../assets/images/emojis/emoji_7.png";
+import emoji8Particle from "../assets/images/emojis/emoji_8.png";
 import emoji0Model from "../assets/models/emojis/emoji_0.glb";
 import emoji1Model from "../assets/models/emojis/emoji_1.glb";
 import emoji2Model from "../assets/models/emojis/emoji_2.glb";
@@ -15,6 +16,8 @@ import emoji3Model from "../assets/models/emojis/emoji_3.glb";
 import emoji4Model from "../assets/models/emojis/emoji_4.glb";
 import emoji5Model from "../assets/models/emojis/emoji_5.glb";
 import emoji6Model from "../assets/models/emojis/emoji_6.glb";
+import emoji7Model from "../assets/models/emojis/emoji_7.glb";
+import emoji8Model from "../assets/models/emojis/emoji_8.glb";
 
 export const emojis = [
   { id: "smile", model: emoji0Model, particle: emoji0Particle },
@@ -23,7 +26,9 @@ export const emojis = [
   { id: "heart", model: emoji3Model, particle: emoji3Particle },
   { id: "wave", model: emoji4Model, particle: emoji4Particle },
   { id: "angry", model: emoji5Model, particle: emoji5Particle },
-  { id: "cry", model: emoji6Model, particle: emoji6Particle }
+  { id: "cry", model: emoji6Model, particle: emoji6Particle },
+  { id: "emoji7", model: emoji7Model, particle: emoji7Particle },
+  { id: "emoji8", model: emoji8Model, particle: emoji8Particle }
 ].map(({ model, particle, ...rest }) => {
   return {
     ...rest,
