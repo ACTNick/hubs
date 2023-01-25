@@ -506,6 +506,32 @@ export const keyboardMouseUserBindings = addSetsToBindings({
       xform: xforms.rising
     },
     {
+      src: {
+        bool: paths.device.keyboard.key("control"),
+        value: paths.device.keyboard.key("8")
+      },
+      dest: { value: "/var/notcontrol+8" },
+      xform: xforms.copyIfFalse
+    },
+    {
+      src: { value: "/var/notcontrol+8" },
+      dest: { value: paths.actions.spawnEmoji7 },
+      xform: xforms.rising
+    },
+    {
+      src: {
+        bool: paths.device.keyboard.key("control"),
+        value: paths.device.keyboard.key("9")
+      },
+      dest: { value: "/var/notcontrol+9" },
+      xform: xforms.copyIfFalse
+    },
+    {
+      src: { value: "/var/notcontrol+9" },
+      dest: { value: paths.actions.spawnEmoji8 },
+      xform: xforms.rising
+    },
+    {
       src: { value: paths.device.keyboard.key("i") },
       dest: { value: paths.actions.startInspectingSelf },
       xform: xforms.rising
