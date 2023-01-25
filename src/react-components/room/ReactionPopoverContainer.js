@@ -12,7 +12,9 @@ const emojiLabels = defineMessages({
   heart: { id: "reaction-popover.emoji-label.heart", defaultMessage: "Heart" },
   wave: { id: "reaction-popover.emoji-label.wave", defaultMessage: "Wave" },
   angry: { id: "reaction-popover.emoji-label.angry", defaultMessage: "Angry" },
-  cry: { id: "reaction-popover.emoji-label.cry", defaultMessage: "Cry" }
+  cry: { id: "reaction-popover.emoji-label.cry", defaultMessage: "Cry" },
+  emoji7: { id: "reaction-popover.emoji-label.emoji7", defaultMessage: "Emoji7" },
+  emoji8: { id: "reaction-popover.emoji-label.emoji8", defaultMessage: "Emoji8" }
 });
 
 function usePresence(scene, initialPresence) {
