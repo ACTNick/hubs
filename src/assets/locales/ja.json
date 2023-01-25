@@ -208,4 +208,5 @@
   "twitter-oauth-modal.connect-button": "Twitterに接続",
   "twitter-oauth-modal.message": "Twitterに接続して,{appName}からツイートを送信してください。",
   "ui-root.interstitial-prompt": "続行"
+  "reaction-popover.title":"カメラ"
 }
