@@ -112,7 +112,7 @@ AFRAME.registerComponent("media-loader", {
       } else {
         // Move the mesh such that the center of its bounding box is in the same position as the parent matrix position
         const box = getBox(this.el, mesh);
-        const scaleCoefficient = fitToBox ? getScaleCoefficient(0.5, box) : 1;
+        const scaleCoefficient = fitToBox ? getScaleCoefficient(0.5, box) : 10000;
         const { min, max } = box;
         center.addVectors(min, max).multiplyScalar(0.5 * scaleCoefficient);
         mesh.scale.multiplyScalar(scaleCoefficient);
@@ -294,7 +294,7 @@ AFRAME.registerComponent("media-loader", {
     if (this.data.animate) {
       if (!this.animating) {
         this.animating = true;
-        if (shouldUpdateScale) this.updateScale(this.data.fitToBox, this.data.moveTheParentNotTheMesh);
+        if (shouldUpdateScale) this.updateScale(false, this.data.moveTheParentNotTheMesh);
         const mesh = this.el.getObject3D("mesh");
         const scale = { x: 0.001, y: 0.001, z: 0.001 };
         scale.x = mesh.scale.x < scale.x ? mesh.scale.x * 0.001 : scale.x;
